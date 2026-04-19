@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vazquez-Kennedy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <!-- Fuente de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-3 pb-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="recursos-multimedia/logo.png" alt="Logo Vásquez-Kennedy" width="120" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Quiénes Somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción A</a></li>
+                        <li><a class="dropdown-item" href="#">Opción B</a></li>
+                        <li><a class="dropdown-item" href="#">Opción C</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Banco de Talentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conekta</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- indicadores (los 3 circulos) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active hero-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="recursos-multimedia/home/video-slide-1.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-overlay">
+                    <div class="container">
+                        <h1>
+                            ¿Le atemoriza la necesidad de competir
+                            con empresas globales en su propio mercado?
+                        </h1>
+
+                        <p>
+                            ¿Es más lo que invierte su empresa en el desarrollo
+                            y el bienestar de los empleados que lo que logra
+                            en su productividad?
+                        </p>
+
+                        <a class="btn-hero" href="#">Conoce más</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item hero-slide">
+
+                <video autoplay muted loop playsinline>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-overlay">
+                    <div class="container">
+                        <h1>Otro mensaje empresarial</h1>
+                        <p>Texto descriptivo del SEGUNDO video.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item hero-slide">
+
+                <video autoplay muted loop playsinline>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-overlay">
+                    <div class="container">
+                        <h1>Último mensaje empresarial</h1>
+                        <p>Texto descriptivo del TERCER video.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner" style="background-image: url('recursos-multimedia/home/banner-1-background.png');">
+        <div class="container banner-content">
+            <h3>En Colombia, por fin tenemos</h3>
+
+            <img src="recursos-multimedia/home/banner-1-logo.png" 
+                alt="PaaS Productivity as a Service"
+                class="banner-logo" >
+        </div>
+    </div>
+
+    <section class="servicios-section">
+        <div class="container">
+            <div class="servicios-grid">
+                <!-- Tarjeta 1 -->
+                <div class="servicio-card">
+                    <img src="recursos-multimedia/home/service-card-1.png" class="servicio-img">
+                    <div class="servicio-frame">
+                        <a href="#" class="servicio-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <h5>Gestión del Desempeño</h5>
+                        <p>
+                            Cada empleado trabaja con foco en sus resultados
+                            claves alineados con los de la empresa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="servicio-card">
+                    <img src="recursos-multimedia/home/service-card-2.png" class="servicio-img">
+                    <div class="servicio-frame">
+                        <a href="#" class="servicio-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <h5>Desarrollo de Carrera</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices, nisl sed sagittis tristique, tellus mauris vulputate nibh, at pretium velit magna non magna. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="servicio-card">
+                    <img src="recursos-multimedia/home/service-card-3.png" class="servicio-img">
+                    <div class="servicio-frame">
+                        <a href="#" class="servicio-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <h5>Experiencia del empleado</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices, nisl sed sagittis tristique, tellus mauris vulputate nibh, at pretium velit magna non magna. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="servicio-card">
+                    <img src="recursos-multimedia/home/service-card-4.png" class="servicio-img">
+                    <div class="servicio-frame">
+                        <h5 style="font-weight:600;"><i>Outplacement</i> / Transición de Carrera</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices, nisl sed sagittis tristique, tellus mauris vulputate nibh, at pretium velit magna non magna. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-tarjetas" style = "background-image: url('../recursos-multimedia/home/banner-2-background.png');">
+        <div class="container">
+            <div class="tarjetas-grid">
+
+                <!-- Tarjeta 1 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+
+                        <div class="flip-front">
+                            <img src="recursos-multimedia/home/banner-2-logo-1.png" class="card-logo">
+                        </div>
+
+                        <div class="flip-back">
+                            <p>
+                                Plataforma para gestionar el desarrollo
+                                y tomar decisiones basadas en datos.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="recursos-multimedia/home/banner-2-logo-1.png" class="card-logo">
+                        </div>
+
+                        <div class="flip-back">
+                            <p>
+                                Optimice la productividad de sus equipos
+                                con inteligencia de talento humano.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!--
+    <div class="banner" style="background-image: url('recursos-multimedia/home/banner-2-background.png');">
+        <div class="container banner-content">
+            <img src="recursos-multimedia/home/banner-2-logo.png" 
+                alt="PaaS Productivity as a Service"
+                class="banner-logo" style="margin-bottom: 8px;">
+            <p style="max-width:650px">Plataforma para gestionar el desarrollo de los empleados y tomar decisiones basadas en el uso inteligente de los datos de los empleados.</p>
+        </div>
+    </div>
+ -->
+
+    <section class="paas-section">
+        <div class="card-container">
+
+            <!-- Tarjeta 1 -->
+            <div class="flip-card-banner-3" style="--imagen:url('../recursos-multimedia/home/banner-3-card-1.png')">
+                <div class="flip-inner-banner-3">
+
+                    <div class="flip-front-banner-3"></div>
+
+                    <div class="flip-back-banner-3">
+                        <div class="card-text-banner-3">
+                            <h2>¿Cómo lo hace PaaS?</h2>
+
+                            <p>Nos hacemos cargo del desarrollo de sus empleados sin grandes inversiones ni tiempos largos de espera.</p>
+
+                            <ul>
+                                <li>Con tecnología e IA para el uso inteligente de los datos de los empleados.</li>
+                                <li>Con metodología robusta construida en tres décadas de trayectoria atendiendo el desarrollo profesional de más de 15.000 empleados.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Tarjeta 2 -->
+            <div class="flip-card-banner-3" style="--imagen:url('../recursos-multimedia/home/banner-3-card-2.png')">
+                <div class="flip-inner-banner-3">
+
+                    <div class="flip-front-banner-3"></div>
+
+                    <div class="flip-back-banner-3">
+                        <div class="card-text-banner-3">
+
+                            <h4>PaaS es un modelo flexible que se adapta exactamente a lo que necesita su empresa:</h4>
+
+                            <ul>
+                                <li>Vásquez Kennedy se hace cargo directamente de la implementación de PaaS en su empresa… desde mañana mismo.</li>
+                                <li>Implementamos el modelo gradualmente, a la velocidad apropiada.</li>
+                                <li>Es potencialmente adaptable a plataformas tecnológicas diferentes a las que ofrecemos.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4 mb-2 py-0 px-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card tarjeta-diagnostico mb-3">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-1 text-center">
+                            <img src="recursos-multimedia/home/banner-4-img.png" class="rounded-circle img-diagnostico" alt="">
+                        </div>
+
+                        <div class="col-md-11">
+                            <div class="card-body text-white text-center">
+                                <p class="mb-2">
+                                    <strong>
+                                    Evalúa qué tan alineado está el desarrollo de tu equipo con los resultados de tu empresa.
+                                    </strong>
+                                    Completa este diagnóstico y obtén de inmediato una visión clara de su impacto en productividad y compromiso.
+                                </p>
+                                <button class="btn boton-test rounded-pill px-5">
+                                    Hacer test
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-wrapper">
+    <iframe 
+        src="https://www.youtube.com/embed/1uckZiyojC0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+    </div>
+
+    <section class="about">
+        <div class="container-about">
+
+            <div class="about-image">
+                <div class="about-text">
+                    <h2>¿Quiénes somos?</h2>
+                </div>
+                <img src="recursos-multimedia/home/quienes-somos-img.png" alt="Equipo de trabajo Kennedy Vasquez">
+            </div>
+            
+            <div class="about-text">
+                <p>
+                    Tres décadas acompañando el desarrollo del éxito de más de
+                    15.000 profesionales en el éxito de sus carreras.
+                </p>
+                <p>
+                    Tecnología avanzada e IA para el desarrollo de los empleados.
+                </p>
+                <p><strong>Un equipo humano HUMANO.</strong></p>
+                <a href="#" class="btn-about">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="valores">
+        <div class="container">
+            <h2>Nuestros valores:</h2>
+
+            <div class="cards-valores">
+                <div class="card-valores">
+                    <img src="recursos-multimedia/home/valores-img-1.png" alt="Trascendencia">
+                    <h3>TRASCENDENCIA</h3>
+                    <p>
+                    Nuestro mayor compromiso con nuestras experiencias de aprendizaje es que tengan consecuencias importantes para las personas.
+                    </p>
+                </div>
+
+                <div class="card-valores">
+                    <img src="recursos-multimedia/home/valores-img-2.png" alt="Accesibilidad">
+                    <h3>ACCESIBILIDAD</h3>
+                    <p>
+                    Reducimos continuamente las barreras geográficas, operativas y económicas para el acceso a nuestros servicios.
+                    </p>
+                </div>
+
+                <div class="card-valores">
+                    <img src="recursos-multimedia/home/valores-img-3.png" alt="Impecabilidad">
+                    <h3>IMPECABILIDAD</h3>
+                    <p>
+                    Nos aseguramos de tener contenidos coherentes y actualizados y de presentar nuestros productos con los más altos estándares de estética y perfección.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo -->
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <img src="recursos-multimedia/logo-negativo.png" class="footer-logo" alt="logo" width="180" height="70">
+                </div>
+            </div>
+
+            <!-- Contenido -->
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 ps-md-5">
+                    <h5>¿Quieres saber más<br>sobre nuestros servicios?</h5>
+                </div>
+
+                <div class="col-md-6 ps-md-5">
+                    <p class="contacto">
+                        <span class="icono">
+                            <i class="bi bi-telephone-fill" style="color: var(--color-secundario);"></i>
+                        </span>
+                        (+57) 319 5352370
+                    </p>
+                    <p class="contacto">
+                        <span class="icono">
+                            <i class="bi bi-envelope-fill" style="color: var(--color-secundario);"></i>
+                        </span>
+                        monica.cubides@vasquezkennedy.com
+                    </p>
+                    <p class="contacto">
+                        <span class="icono">
+                            <i class="bi bi-telephone-fill" style="color: var(--color-secundario);"></i>
+                        </span>
+                        (+57) 314 4877898
+                    </p>
+                    <p class="contacto">
+                        <span class="icono">
+                            <i class="bi bi-envelope-fill" style="color: var(--color-secundario);"></i>
+                        </span>
+                        diana.ruiz@vasquezkennedy.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573145352370" target="_blank" class="whatsapp-float">
+        <img src="recursos-multimedia/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <!-- Bootstrap 5: JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+
+</html>

@@ -1,0 +1,121 @@
+/* ESTILOS GENERALES*/
+:root{
+
+/* COLORES */
+--color-principal:#044f8c;
+--color-secundario:#ed231d;
+--color-terciario:#ffffff;
+--color-cuarto: #000000;
+
+--color-principal-hover: #0881e4;
+--color-secundario-hover: #c90000;
+
+
+/* TIPOGRAFIA */
+--font-principal:"Roboto", sans-serif;
+--font-secundario:"Arimo", sans-serif;
+
+/* TAMAÑOS */
+--titulo-grande:48px;
+--titulo-mediano:32px;
+--texto-normal:16px;
+
+--texto-grande:18px;
+--texto-mediano:16px;
+--texto-normal:14px;
+--texto-pequeño:12px;
+}
+
+
+body {
+  font-family: var(--font-principal);
+}
+
+h1,h2,h3,h4,h5{
+  font-family: var(--font-principal);
+}
+
+/* --- Menu normal -------- */
+.navbar{ 
+  background-color: var(--color-terciario) !important;
+  font-family: var(--font-secundario);
+  --bs-navbar-color:var(--color-principal); /* Color texto Menu normal*/
+  --bs-navbar-hover-color:var(--color-principal-hover);  /*Color al pasar el mouse*/
+  --bs-navbar-active-color:#033c6b; /* Color texto Menu / opcion activada*/
+  --bs-navbar-toggler-border-color: var(--color-principal);/*icono del menú móvil*/
+}
+
+/* --- Menu desplegable --- */
+.dropdown-item{
+  color: var(--color-principal);
+}
+
+.dropdown-item:hover{
+  color:var(--color-principal-hover); 
+}
+
+.navbar-toggler-icon{ /* Color menu hamburguesa*/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23044f8c' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* --- Footer ------------*/
+.footer{
+  background:var(--color-principal);
+  color:var(--color-terciario);
+  padding:25px 20%;
+  font-family: var(--font-principal);
+}
+
+
+.footer h5{
+  font-weight:600;
+}
+
+.footer p{
+  margin:0px 0;
+  font-size:14px;
+}
+
+.contacto{
+  display:flex;
+  align-items:center;
+}
+
+.icono{
+  width:22px;
+  height:22px;
+  background:var(--color-terciario);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 3px; /* espacio interno entre las direcciones */
+  margin-right: 5px;
+}
+
+@media (max-width:767px){
+    .contacto{
+        justify-content:center;
+    }
+
+    .footer{
+      padding:25px 10%;
+    }
+}
+
+/* --- Icono de whatsApp  */
+.whatsapp-float{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.whatsapp-float img{
+    width: 50px;
+    height: auto;
+}
+
+.whatsapp-float img:hover{
+    transform: scale(1.05);
+}
